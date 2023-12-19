@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <div class="card">
+      <div class="display">
+        <input type="text" id="main" maxlength="10" />
+      </div>
+      <div class="calc-body">
+        <div class="calc-btn">
+          <input
+            type="button"
+            class="btn"
+            value="AC"
+            onclick="main.value = '' "
+          />
+          <input
+            type="button"
+            class="btn"
+            value="+/-"
+            onclick="main.value += '+/-' "
+            onclick="main.value -= '/' "
+          />
+          <input
+            type="button"
+            class="btn"
+            value="%"
+            onclick="main.value += '%' "
+          />
+          <input
+            type="button"
+            class="btn btn-2"
+            value="/"
+            onclick="main.value += '/' "
+          />
+        </div>
+        <div class="calc-btn">
+          <input
+            type="button"
+            class="btn"
+            value="7"
+            onclick="main.value += '7' "
+          />
+          <input
+            type="button"
+            class="btn"
+            value="8"
+            onclick="main.value += '8' "
+          />
+          <input
+            type="button"
+            class="btn"
+            value="9"
+            onclick="main.value += '9' "
+          />
+          <input
+            type="button"
+            class="btn btn-2"
+            value="x"
+            onclick="main.value += '*' "
+          />
+        </div>
+        <div class="calc-btn">
+          <input
+            type="button"
+            class="btn"
+            value="4"
+            onclick="main.value += '4' "
+          />
+          <input
+            type="button"
+            class="btn"
+            value="5"
+            onclick="main.value += '5' "
+          />
+          <input
+            type="button"
+            class="btn"
+            value="6"
+            onclick="main.value += '6' "
+          />
+          <input
+            type="button"
+            class="btn btn-2"
+            value="-"
+            onclick="main.value += '-' "
+          />
+        </div>
+        <div class="calc-btn">
+          <input
+            type="button"
+            class="btn"
+            value="1"
+            onclick="main.value += '1' "
+          />
+          <input
+            type="button"
+            class="btn"
+            value="2"
+            onclick="main.value += '2' "
+          />
+          <input
+            type="button"
+            class="btn"
+            value="3"
+            onclick="main.value += '3' "
+          />
+          <input
+            type="button"
+            class="btn btn-2"
+            value="+"
+            onclick="main.value += '+' "
+          />
+        </div>
+        <div class="calc-btn">
+          <input
+            type="button"
+            class="btn"
+            value="0"
+            onclick="main.value += '0' "
+          />
+          <input
+            type="button"
+            class="btn"
+            value="."
+            onclick="main.value += '.' "
+          />
+
+          <input type="button" class="btn del" value="DEL" onclick="DEL()" />
+
+          <input
+            type="button"
+            class="btn btn-3"
+            value="="
+            onclick="main.value = eval(main.value)"
+          />
+        </div>
+      </div>
+    </div>
+    <script></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
