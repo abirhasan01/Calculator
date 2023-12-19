@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
-    <style></style>
+    <title>Calculator</title>
   </head>
   <body>
     <h1>Calculator</h1>
@@ -134,7 +133,7 @@
             onclick="main.value += '.' "
           />
 
-          <input type="button" class="btn del" value="DEL" onclick="DEL()" />
+          <input type="button" class="btn" value="DEL" onclick="DEL()" />
 
           <input
             type="button"
@@ -145,7 +144,11 @@
         </div>
       </div>
     </div>
-    <script></script>
+    <script>
+      function DEL() {
+        main.value = main.value.slice(0, -1);
+      }
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>
